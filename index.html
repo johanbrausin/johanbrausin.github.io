@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Johan Brausin · Portafolio</title>
+<meta name="description" content="Portafolio de Johan Gefrey Brausin Varon: automatización de datos, modelos predictivos e IA en Python.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f4ef; --card:#ffffff; --ink:#1d2327; --muted:#5b6670;
+    --accent:#2f6f8f; --accent-soft:#e3eef3; --line:#e2ddd3;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#14181b; --card:#1c2226; --ink:#e8ecee; --muted:#9aa6ae;
+           --accent:#7fb7d1; --accent-soft:#1f3540; --line:#2b3338; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif}
+  a{color:var(--accent)}
+  .wrap{max-width:860px;margin:0 auto;padding:0 16px}
+  header{padding:64px 0 32px}
+  h1{font-family:Fraunces,Georgia,serif;font-size:clamp(2rem,6vw,3rem);line-height:1.1;margin:0 0 8px}
+  .role{color:var(--muted);font-size:1.1rem;margin:0 0 20px}
+  .links{display:flex;flex-wrap:wrap;gap:10px}
+  .links a{padding:6px 14px;border:1px solid var(--line);border-radius:999px;text-decoration:none;background:var(--card);font-size:.95rem}
+  section{padding:28px 0;border-top:1px solid var(--line)}
+  h2{font-family:Fraunces,Georgia,serif;font-size:1.5rem;margin:0 0 16px}
+  .grid{display:grid;gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+  .card h3{margin:0 0 6px;font-size:1.1rem}
+  .card p{margin:0 0 10px;color:var(--muted)}
+  .card img{width:100%;border-radius:8px;border:1px solid var(--line);margin:8px 0 10px;background:#fff}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+  .tags li{background:var(--accent-soft);color:var(--accent);border-radius:6px;padding:2px 8px;font-size:.82rem;font-weight:500}
+  .status{font-size:.8rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+  .row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .row span{color:var(--muted);font-size:.92rem}
+  ul.plain{margin:0;padding-left:18px}
+  footer{padding:32px 0 48px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Johan Gefrey Brausin Varon</h1>
+  <p class="role">Ingeniero físico · Automatización de datos, modelos predictivos e IA en Python</p>
+  <div class="links">
+    <a href="mailto:jbrausinv@unal.edu.co">jbrausinv@unal.edu.co</a>
+    <a href="https://github.com/johanbrausin">GitHub</a>
+    <a href="https://linkedin.com/in/johan-brausin">LinkedIn</a>
+  </div>
+</header>
+
+<section>
+  <h2>Sobre mí</h2>
+  <p>Ingeniero físico de la Universidad Nacional de Colombia, estudiante de la Maestría en Ciencias – Física. Trabajo con Python para automatizar el manejo de datos y construir modelos que predicen resultados: desde redes neuronales para química computacional hasta clasificadores de leads. En mi contrato más reciente hice el seguimiento técnico de una plataforma analítica de datos para la gestión de la demanda en la industria manufacturera.</p>
+</section>
+
+<section>
+  <h2>Proyectos</h2>
+  <div class="grid">
+
+    <article class="card">
+      <h3>Lead scoring y calificación MQL / SQL</h3>
+      <p>Modelo en Python que puntúa leads de 0 a 100 según su probabilidad de convertir y los clasifica como SQL, MQL o nutrición con reglas de negocio ajustables. Incluye un script que califica automáticamente los leads exportados de un formulario o un CRM. Con datos sintéticos, los SQL convierten seis veces más que los leads en nutrición (AUC 0,79).</p>
+      <img src="assets/conversion_por_decil.png" alt="Gráfica de conversión real por decil de puntaje: la conversión sube del decil 1 al 10">
+      <ul class="tags"><li>Python</li><li>scikit-learn</li><li>Lead scoring</li><li>Automatización</li></ul>
+      <p style="margin-top:12px"><a href="https://github.com/johanbrausin/lead-scoring-mql-sql">Ver código en GitHub →</a></p>
+    </article>
+
+    <article class="card">
+      <div class="status">En desarrollo</div>
+      <h3>Visualizador de datos de ayuda humanitaria</h3>
+      <p>Tablero que lee una base en CSV, detecta automáticamente el tipo de dato de cada columna y muestra los resultados en mapas de calor interactivos, publicado en un enlace abierto para apoyar decisiones sobre la entrega de ayudas.</p>
+      <ul class="tags"><li>Python</li><li>Visualización</li><li>Mapas de calor</li></ul>
+    </article>
+
+    <article class="card">
+      <h3>Predicción con redes neuronales de grafos (Minciencias)</h3>
+      <p>Proyecto de joven investigador: base de datos de energías de absorción de CO₂ y un modelo GNN que las predice, alimentado por cálculos ejecutados en lote. Incluye seguimiento de presupuesto e informes de avance.</p>
+      <ul class="tags"><li>IA</li><li>GNN</li><li>Bases de datos</li><li>Reportes</li></ul>
+    </article>
+
+    <article class="card">
+      <h3>Sitio web en WordPress</h3>
+      <p>Proyecto guiado (Coursera, 2026): configuración de páginas, edición de contenido, publicación de entradas y diseño responsive.</p>
+      <ul class="tags"><li>WordPress</li><li>Web</li></ul>
+    </article>
+
+  </div>
+</section>
+
+<section>
+  <h2>Experiencia</h2>
+  <div class="grid">
+    <div class="row"><strong>Analista de Servicios Técnicos — Universidad Nacional de Colombia</strong><span>oct. 2025 – mar. 2026</span></div>
+    <div class="row"><strong>Innovación e Investigación (Joven Investigador Minciencias) — Universidad Nacional de Colombia</strong><span>may. 2025 – actual</span></div>
+    <div class="row"><strong>Asistente de Investigación — Universidad Nacional de Colombia</strong><span>ago. – nov. 2023</span></div>
+    <div class="row"><strong>Asistente de Investigación — Mitacs Globalink, University of Saskatchewan</strong><span>jul. – oct. 2022</span></div>
+    <div class="row"><strong>Tutor – Estudiante Auxiliar — Universidad Nacional de Colombia</strong><span>abr. – ago. 2022</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>Publicación</h2>
+  <p><em>Electronic and Charge Transfer Properties of Bimetallic Nanocluster–Graphene Hybrids with Stone–Wales Defects for Biosensing Applications.</em> The Journal of Physical Chemistry C (2026). <a href="https://doi.org/10.1021/acs.jpcc.6c02367">doi:10.1021/acs.jpcc.6c02367</a></p>
+</section>
+
+<section>
+  <h2>Herramientas</h2>
+  <ul class="tags">
+    <li>Python</li><li>pandas</li><li>scikit-learn</li><li>TensorFlow</li><li>MySQL</li><li>WordPress</li><li>Git y GitHub</li><li>NetworkX</li><li>Inglés B2</li>
+  </ul>
+</section>
+
+<footer>
+  Johan Gefrey Brausin Varon · Manizales, Colombia
+</footer>
+
+</div>
+</body>
+</html>
